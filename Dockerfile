@@ -19,6 +19,6 @@ RUN dotnet publish -c Release -o /app/out
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/out .
-COPY init.sh ./init.sh
-RUN chmod +x ./init.sh
-ENTRYPOINT ["./init.sh"]
+
+# Ejecuta tu aplicación
+ENTRYPOINT ["dotnet", "UrbanTheater.Api.dll"]
