@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Obtén la cadena de conexión de tu archivo de configuración (appsettings.json u otro)
 var keyString = "ServerDB";
 var connectionString = builder.Configuration.GetConnectionString(keyString);
@@ -34,6 +36,10 @@ builder.Services.AddScoped<AsientoService>();
 builder.Services.AddScoped<IAsientoRepository, AsientoRepository>();
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<HistorialService>(); 
+builder.Services.AddScoped<IHistorialRepository, HistorialRepository>();
+
+
 
 // Configuración de CORS para permitir solicitudes de cualquier origen
 builder.Services.AddCors(options =>

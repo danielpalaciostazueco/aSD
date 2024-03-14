@@ -13,6 +13,7 @@ namespace UrbanTheater.Data
         public DbSet<Asiento> Asientos { get; set; }
         public DbSet<AsientosObrasDatos> AsientosObrasDatos { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Historial> Historial { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -65,7 +66,7 @@ namespace UrbanTheater.Data
                        Nombre = "Hamlet",
                        Descripcion = "Una de las tragedias más emblemáticas de William Shakespeare, centrada en la historia del príncipe Hamlet de Dinamarca, quien busca vengar la muerte de su padre. La obra explora temas complejos como la locura, la traición, la venganza y la moralidad.",
                        Autores = "William Shakespeare",
-                       Duracion =  6300,
+                       Duracion = 6300,
                        Actores = "Alexander Knight, Sarah Miller, David Johnson, Emily White, Richard Brown",
                        Imagenes = "https://ik.imagekit.io/daniel2003/fotos-descripción-obras-teatro/Hamlet/hamlet_FN2.jpg , https://ik.imagekit.io/daniel2003/fotos-descripción-obras-teatro/Hamlet/hamlet_FN.jpg",
                        FechaUno = new DateTime(2024, 6, 1, 18, 30, 0),
@@ -219,16 +220,16 @@ namespace UrbanTheater.Data
                     isFree = true
                 }
             );
-           modelBuilder.Entity<Usuario>().HasData(
-                new Usuario
-                {
-                    idUsuario = 1,
-                    nombreUsuario = "Daniel_Admin",
-                    contrasena = "Daniel_Admin123",
-                    rol = 1
-                }
+            modelBuilder.Entity<Usuario>().HasData(
+                 new Usuario
+                 {
+                     idUsuario = 1,
+                     nombreUsuario = "Daniel_Admin",
+                     contrasena = "Daniel_Admin123",
+                     rol = 1
+                 }
 
-            );
+             );
         }
     }
 }

@@ -9,3 +9,38 @@ C:\Users\Usuario\Desktop\UrbanTheater\Models\obj\Debug\net7.0\UrbanTheater.Model
 C:\Users\Usuario\Desktop\UrbanTheater\Models\obj\Debug\net7.0\refint\UrbanTheater.Models.dll
 C:\Users\Usuario\Desktop\UrbanTheater\Models\obj\Debug\net7.0\UrbanTheater.Models.pdb
 C:\Users\Usuario\Desktop\UrbanTheater\Models\obj\Debug\net7.0\ref\UrbanTheater.Models.dll
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.deps.json
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.dll
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.pdb
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.csproj.AssemblyReference.cache
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.AssemblyInfoInputs.cache
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.AssemblyInfo.cs
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.csproj.CoreCompileInputs.cache
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.dll
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\refint\UrbanTheater.Models.dll
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.pdb
+C:\Users\S2-PC00\Downloads\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\ref\UrbanTheater.Models.dll
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.deps.json
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.dll
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.pdb
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.csproj.AssemblyReference.cache
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.AssemblyInfoInputs.cache
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.AssemblyInfo.cs
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.dll
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\refint\UrbanTheater.Models.dll
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.pdb
+D:\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\ref\UrbanTheater.Models.dll
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.deps.json
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.dll
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\bin\Debug\net7.0\UrbanTheater.Models.pdb
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.AssemblyInfoInputs.cache
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.AssemblyInfo.cs
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.dll
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\refint\UrbanTheater.Models.dll
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\UrbanTheater.Models.pdb
+C:\Users\Usuario\Downloads\Nueva carpeta (1)\Nueva carpeta\Nueva carpeta\aSD\Models\obj\Debug\net7.0\ref\UrbanTheater.Models.dll

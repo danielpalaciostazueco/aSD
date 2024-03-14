@@ -162,6 +162,37 @@ namespace UrbanTheater.Data.Migrations
                     b.ToTable("AsientosObrasDatos");
                 });
 
+            modelBuilder.Entity("UrbanTheater.Models.Historial", b =>
+                {
+                    b.Property<int>("idObjeto")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idObjeto"));
+
+                    b.Property<int>("asiento")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nombreObra")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nombreUsuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("sesion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("idObjeto");
+
+                    b.ToTable("Historial");
+                });
+
             modelBuilder.Entity("UrbanTheater.Models.Obra", b =>
                 {
                     b.Property<int>("ObraID")

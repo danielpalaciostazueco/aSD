@@ -42,6 +42,23 @@ namespace UrbanTheater.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Historial",
+                columns: table => new
+                {
+                    idObjeto = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    nombreUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    nombreObra = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    sesion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    asiento = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Historial", x => x.idObjeto);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Obras",
                 columns: table => new
                 {
@@ -133,6 +150,9 @@ namespace UrbanTheater.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AsientosObrasDatos");
+
+            migrationBuilder.DropTable(
+                name: "Historial");
 
             migrationBuilder.DropTable(
                 name: "Obras");
