@@ -12,7 +12,7 @@ using UrbanTheater.Data;
 namespace UrbanTheater.Data.Migrations
 {
     [DbContext(typeof(UrbanTheaterAppContext))]
-    [Migration("20240314042316_InitialCreate")]
+    [Migration("20240314103430_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -160,6 +160,9 @@ namespace UrbanTheater.Data.Migrations
                     b.Property<int>("idSesion")
                         .HasColumnType("int");
 
+                    b.Property<int>("idUsuario")
+                        .HasColumnType("int");
+
                     b.HasKey("idObjeto");
 
                     b.ToTable("AsientosObrasDatos");
@@ -178,6 +181,9 @@ namespace UrbanTheater.Data.Migrations
 
                     b.Property<DateTime>("fecha")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("idUsuario")
+                        .HasColumnType("int");
 
                     b.Property<string>("nombreObra")
                         .IsRequired()

@@ -18,12 +18,12 @@ namespace UrbanTheater.Api.Controllers
             _historialService = historialService;
         }
 
-        [HttpGet("{name}")]
-        public ActionResult<List<Historial>> Get(string name)
+        [HttpGet("{id}")]
+        public ActionResult<List<Historial>> Get(int id)
         {
             try
             {
-                var historiales = _historialService.Get(name);
+                var historiales = _historialService.Get(id);
                 if (historiales == null || !historiales.Any())
                 {
                     return NotFound();
@@ -37,7 +37,7 @@ namespace UrbanTheater.Api.Controllers
                 return StatusCode(500, "Error interno del servidor");
             }
         }
-   [HttpPost]
+        [HttpPost]
         public IActionResult Post([FromBody] HistorialDTO historial)
         {
             try
@@ -46,19 +46,19 @@ namespace UrbanTheater.Api.Controllers
                 {
                     return BadRequest(ModelState);
                 }
-                foreach( var asiento in historial.asiento)
+                foreach (var asiento in historial.asiento)
                 {
-                    _historialService.Add(historial.nombreUsuario,historial.nombreObra,historial.fecha,historial.sesion, asiento);
+                    _historialService.Add(historial.nombreUsuario, historial.nombreObra, historial.fecha, historial.sesion, asiento, historial.idUsuario);
                 }
-                
-    
+
+
                 return StatusCode(201, historial);
             }
             catch (Exception ex)
             {
-            
+
                 Log.Error(ex, "Error al hacer el post");
-   
+
                 return StatusCode(500, "Error interno del servidor");
             }
         }

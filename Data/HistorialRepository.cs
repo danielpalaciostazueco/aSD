@@ -19,20 +19,21 @@ namespace UrbanTheater.Data
             _logger = logger;
 
         }
-        public List<Historial> Get(string name)
+        public List<Historial> Get(int idUsuario)
         {
             try
             {
-                return _context.Historial.ToList().Where(x => x.nombreUsuario == name).ToList();
+
+                return _context.Historial.Where(x => x.idUsuario == idUsuario).ToList();
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error obteniendo el historial por defecto.");
+                _logger.LogError(ex, "Error obteniendo el historial por id de usuario.");
                 throw;
             }
         }
 
-        public void Add(string nombreUsuario, string nombreObra, System.DateTime fecha, string sesion, int asiento)
+        public void Add(string nombreUsuario, string nombreObra, System.DateTime fecha, string sesion, int asiento, int idUsuario)
         {
             try
             {
@@ -42,9 +43,10 @@ namespace UrbanTheater.Data
                     nombreObra = nombreObra,
                     fecha = fecha,
                     sesion = sesion,
-                    asiento = asiento
+                    asiento = asiento,
+                    idUsuario = idUsuario
                 };
-                
+
                 _context.Historial.Add(historial);
                 _context.SaveChanges();
             }

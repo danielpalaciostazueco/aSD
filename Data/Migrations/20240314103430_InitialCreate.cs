@@ -34,7 +34,8 @@ namespace UrbanTheater.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     idObra = table.Column<int>(type: "int", nullable: false),
                     idSesion = table.Column<int>(type: "int", nullable: false),
-                    idAsiento = table.Column<int>(type: "int", nullable: false)
+                    idAsiento = table.Column<int>(type: "int", nullable: false),
+                    idUsuario = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,7 +52,8 @@ namespace UrbanTheater.Data.Migrations
                     nombreObra = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
                     sesion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    asiento = table.Column<int>(type: "int", nullable: false)
+                    asiento = table.Column<int>(type: "int", nullable: false),
+                    idUsuario = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

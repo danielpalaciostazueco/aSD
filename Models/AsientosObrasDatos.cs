@@ -15,4 +15,6 @@ public class AsientosObrasDatos
     public int idSesion { get; set; }
     [Required]
     public int idAsiento { get; set; }
+    [Required]
+    public int idUsuario { get; set; }
 }

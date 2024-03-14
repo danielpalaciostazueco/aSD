@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Logging; 
+﻿using Microsoft.Extensions.Logging;
 using UrbanTheater.Models;
 using UrbanTheater.Data;
 using System.Collections.Generic;
@@ -8,26 +8,26 @@ namespace UrbanTheater.Business
     public class ObraService : IObraService
     {
         private readonly IObraRepository _obraRepository;
-        private readonly ILogger<ObraService> _logger; 
+        private readonly ILogger<ObraService> _logger;
 
-   
+
         public ObraService(IObraRepository obraRepository, ILogger<ObraService> logger)
         {
             _obraRepository = obraRepository;
-            _logger = logger; 
+            _logger = logger;
         }
 
         public List<Obra> GetAll()
         {
             try
             {
-                _logger.LogInformation("Obteniendo todas las obras"); 
+                _logger.LogInformation("Obteniendo todas las obras");
                 return _obraRepository.GetAll();
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error obteniendo todas las obras");
-                throw; 
+                throw;
             }
         }
         public Obra? Get(int id)
@@ -39,7 +39,7 @@ namespace UrbanTheater.Business
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error obteniendo la obra por id");
-                throw; 
+                throw;
             }
 
         }
@@ -51,8 +51,8 @@ namespace UrbanTheater.Business
             }
             catch (Exception ex)
             {
-              _logger.LogError(ex, "Error obteniendo las obras por nombre");
-                throw; 
+                _logger.LogError(ex, "Error obteniendo las obras por nombre");
+                throw;
 
             }
         }
@@ -64,9 +64,9 @@ namespace UrbanTheater.Business
             }
             catch (Exception ex)
             {
-               
+
                 _logger.LogError(ex, "Error actualizando la obra por id");
-                throw; 
+                throw;
             }
         }
 
@@ -81,7 +81,7 @@ namespace UrbanTheater.Business
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error añadiendo la obra");
-                throw; 
+                throw;
             }
 
         }
@@ -94,7 +94,7 @@ namespace UrbanTheater.Business
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error eliminando la obra");
-                throw; 
+                throw;
             }
 
         }
@@ -109,8 +109,8 @@ namespace UrbanTheater.Business
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error obteniendo los asientos ocupados");
-                throw; 
-            
+                throw;
+
             }
         }
 
@@ -123,8 +123,8 @@ namespace UrbanTheater.Business
             }
             catch (Exception ex)
             {
-               _logger.LogError(ex, "Error añadiendo los asientos ocupados");
-                throw; 
+                _logger.LogError(ex, "Error añadiendo los asientos ocupados");
+                throw;
             }
         }
 

@@ -7,7 +7,7 @@ namespace UrbanTheater.Business
 {
     public class HistorialService : IHistorialService
     {
-        private readonly IHistorialRepository  _historialRepository;
+        private readonly IHistorialRepository _historialRepository;
         private readonly ILogger<HistorialService> _logger;
 
 
@@ -18,11 +18,11 @@ namespace UrbanTheater.Business
 
         }
 
-        public List<Historial> Get(string name)
+        public List<Historial> Get(int id)
         {
             try
             {
-                return _historialRepository.Get(name);
+                return _historialRepository.Get(id);
             }
             catch (Exception ex)
             {
@@ -31,11 +31,11 @@ namespace UrbanTheater.Business
             }
         }
 
-        public void Add(string nombreUsuario, string nombreObra, DateTime fecha, string sesion, int  asiento)
+        public void Add(string nombreUsuario, string nombreObra, DateTime fecha, string sesion, int asiento, int idUsuario)
         {
             try
             {
-                _historialRepository.Add(nombreUsuario, nombreObra, fecha, sesion, asiento);
+                _historialRepository.Add(nombreUsuario, nombreObra, fecha, sesion, asiento, idUsuario);
             }
             catch (Exception ex)
             {
