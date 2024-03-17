@@ -46,6 +46,25 @@ namespace UrbanTheater.Api.Controllers
                 return StatusCode(500, "Error interno del servidor");
             }
         }
+        [HttpGet("Search/")]
+        public ActionResult<IEnumerable<Obra>> SearchObraParameters ([FromQuery] QueryParameters queryParameters) {
+            try
+            {
+                var obras = _obraService.SearchObraParameters(queryParameters);
+                if (obras == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(obras);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al hacer el get por parametros ");
+                return StatusCode(500, "Error interno del servidor");
+            }
+        }
+        
 
         [HttpGet("/Obras/Nombre/{name}")]
         public ActionResult<Obra> GetByName(string name)

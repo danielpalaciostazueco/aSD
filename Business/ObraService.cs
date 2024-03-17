@@ -43,6 +43,63 @@ namespace UrbanTheater.Business
             }
 
         }
+        public List<Obra> SearchObraParameters(QueryParameters queryParameters)
+        {
+            try
+            {
+                var obraQuery = _obraRepository.GetAll().AsQueryable();
+
+                if (!string.IsNullOrEmpty(queryParameters.Nombre))
+                {
+                    obraQuery = obraQuery.Where(x => x.Nombre.Contains(queryParameters.Nombre));
+                }
+
+                if (!string.IsNullOrEmpty(queryParameters.Descripcion))
+                {
+                    obraQuery = obraQuery.Where(x => x.Descripcion.Contains(queryParameters.Descripcion));
+                }
+
+                if (!string.IsNullOrEmpty(queryParameters.Autores))
+                {
+                    obraQuery = obraQuery.Where(x => x.Autores.Contains(queryParameters.Autores));
+                }
+
+                if (queryParameters.Duracion != null)
+                {
+                    obraQuery = obraQuery.Where(x => x.Duracion == queryParameters.Duracion);
+                }
+
+                if (!string.IsNullOrEmpty(queryParameters.Actores))
+                {
+                    obraQuery = obraQuery.Where(x => x.Actores.Contains(queryParameters.Actores));
+                }
+
+                if (queryParameters.FechaUno != null)
+                {
+                    obraQuery = obraQuery.Where(x => x.FechaUno == queryParameters.FechaUno);
+                }
+
+                if (queryParameters.FechaDos != null)
+                {
+                    obraQuery = obraQuery.Where(x => x.FechaDos == queryParameters.FechaDos);
+                }
+
+                if (queryParameters.FechaTres != null)
+                {
+                    obraQuery = obraQuery.Where(x => x.FechaTres == queryParameters.FechaTres);
+                }
+
+                var obra = obraQuery.ToList();
+
+                return obra;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error obteniendo las obras por parametros");
+                throw;
+            }
+        }
+
         public Obra GetByName(string name)
         {
             try
