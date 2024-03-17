@@ -4799,11 +4799,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\theater_vue\\aSD\\Api\\UrbanTheater.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\asd\\aSD\\Api\\UrbanTheater.Api.csproj",
       "projectName": "UrbanTheater.Api",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\theater_vue\\aSD\\Api\\UrbanTheater.Api.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\asd\\aSD\\Api\\UrbanTheater.Api.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\theater_vue\\aSD\\Api\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\asd\\aSD\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4818,11 +4818,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\theater_vue\\aSD\\Business\\UrbanTheater.Business.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\theater_vue\\aSD\\Business\\UrbanTheater.Business.csproj"
+            "C:\\Users\\Usuario\\Desktop\\asd\\aSD\\Business\\UrbanTheater.Business.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\asd\\aSD\\Business\\UrbanTheater.Business.csproj"
             },
-            "C:\\Users\\Usuario\\Desktop\\theater_vue\\aSD\\Models\\UrbanTheater.Models.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\theater_vue\\aSD\\Models\\UrbanTheater.Models.csproj"
+            "C:\\Users\\Usuario\\Desktop\\asd\\aSD\\Models\\UrbanTheater.Models.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\asd\\aSD\\Models\\UrbanTheater.Models.csproj"
             }
           }
         }
